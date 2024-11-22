@@ -1,2 +1,3 @@
-# ml-playground
-Repository to learn and practice machine learning
+# ML Playground
+
+> Repository to learn and practice machine learning
