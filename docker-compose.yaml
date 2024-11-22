@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  notebook:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: ml-playground/notebook:local
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./src:/home/user/src
