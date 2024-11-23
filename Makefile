@@ -18,6 +18,7 @@ lint: ## Lint code
 .PHONY: build
 build: ## Build
 	@docker compose build
+	@docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
 
 .PHONY: start
 start: ## Start
